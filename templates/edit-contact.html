@@ -1,0 +1,18 @@
+{% extends 'layout.html'%}
+{% block body%}
+<h1>Crud en react</h1>
+<form  class="row" action="/update/{{contact.0}}" method="POST">
+    <div class="col-sm border">
+        <input class="form-control-plaintext"  type="text"  name="fullname" placeholder="name" value={{contact.1}}>
+    </div>
+    <div class="col-sm border">
+
+        <input class="form-control-plaintext" type="text"  name="phone" placeholder="phone" value={{contact.2}}>
+    </div>
+    <div class="col-sm border">
+
+        <input class="form-control-plaintext" type="text"  name="email" placeholder="email" value={{contact.3}}>
+    </div>
+    <button class=" col-sm btn btn-primary" type="submit">save</button>
+</form>
+{% endblock%}
